@@ -4,24 +4,29 @@
     padding: 0;
 box-sizing: border-box;
 }
-    html,body{
-        width: 100%;
-        height: 100%;
-    }
+html,body{
+    width: 100%;
+    height: 100%;
+}
 
-    header{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        
-    }
- h1 {font-family: 'Dancing Script', cursive;
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;           
+}
+
+h1 {font-family: 'Dancing Script', cursive;
  color:#4eb3c7;
  font-size: 45px;
  margin-left: 30px;
  margin-bottom: 30px;
  font-weight: bold;
-  }
+ transition: all 3s;
+}
+h1:hover{
+    height: auto;
+    width: auto; 
+}
     
 header nav{ display: flex;
     justify-content: flex-end;
@@ -33,7 +38,7 @@ header nav ul li{
     display: inline-block;
     list-style-type: none;
     margin:10px 10px;
-    }
+}
 
 header nav ul li a{ color: #b3afad;
     font-size: 17px;
@@ -42,49 +47,56 @@ header nav ul li a{ color: #b3afad;
     
 }
 header nav ul li a:hover{
-    color: #2e2d2d}
-    
-    h2{
-        font-size: 50px;
-        font-family: 'Dancing Script', cursive;
-        text-align: center;
-        font-weight: bold;
-        margin-bottom: 50px;
-    }
+ color: #2e2d2d
+}
+
+h2{
+    font-size: 50px;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
   
-       .visita{
-            text-align: center;
-         }
+.visita{
+ text-align: center;
+}
 
-    .visita a{
-        display: inline-block;
-        text-decoration: none;
-       background-color:#d4723d;
-       font-weight: normal;
-       height: 40px;
-       width: 150px;
-       border-radius: 3px;
-       margin-bottom: 50px;
-       font-size: 30px;
-      color: aliceblue;
-       font-weight: bold;
-    
-    }
+.vsita a:hover{
+    height: 250px;
+    width: 500px;
+   
+}
 
-    article p{
-        display: flex;
-        justify-content: flex-start;
-        width: 600px;
-        height: auto;
-        font-size: 20px;
-        font-family: 'Courier New', Courier, monospace;
-        margin-left: 50px;
-        margin-bottom: 50px;
-    }
+.visita a{
+    display: inline-block;
+    text-decoration: none;
+    background-color:#d4723d;
+    font-weight: normal;
+    height: 40px;
+    width: 150px;
+    border-radius: 3px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    color: aliceblue;
+    font-weight: bold;
+    transition: all 3s;
+}
+
+article p{
+    display: flex;
+    justify-content: flex-start;
+    width: 600px;
+    height: auto;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
 article{
     display: flex;
     flex-direction: row;
-    }
+}
 
 article img{
     display: flex;
@@ -94,40 +106,56 @@ article img{
     margin-left: 95px;
     flex-wrap: wrap
 }
-  
-    .imagen img{
-        display: inline-block;
-        width: 350px;
-       height: auto;
-       margin: 20px 30px;
-       
+.imagen img{
+    display: inline-block;
+    width: 350px;
+    height: auto;
+    margin: 20px 30px;      
+}
+@keyframes scale-in-center {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 1;
     }
-    
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+  }
 
-    .contenedor{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+  .imagen{
+    animation-name: scale-in-center;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-duration: 2.5s;
+}
+    
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
         
-        }
+}
             
-    .google{
-        display: flex;
-        justify-content: center;
-        margin-right: 15px;
-    }
+.google{
+    display: flex;
+    justify-content: center;
+    margin-right: 15px;
+}
     
 
 
-    section .direccion{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        margin-left: 95px;
-        margin-top: 25px;
+section .direccion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 95px;
+    margin-top: 25px;
         
-    }
+}
 
 
     .datos p{
@@ -201,8 +229,8 @@ article img{
     width: auto;
     height: auto;
     font-weight: bold;
-  
   }
+
   article img{
     display: none;
   }      
