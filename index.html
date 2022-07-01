@@ -4,54 +4,82 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Francia panificados</title> 
         <link rel="icon" href="imagenes/Kiosco-cafe.ico">
-        <link rel= "stylesheet" href="estilos.css">
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-         
+         <link rel="stylesheet" href="boostrap/css/bootstrap.min.css">
+         <script> src= "js/jquery.slim.min.js"</script>
+         <script> src= "js/ bootstrap.bundle.min.js"</script>
+         <link rel= "stylesheet" href="estilos.css">
     </head>
 
     <body>
        
                 <header>
-                    <h1>Panaderia caffe Francia </h1>
-                    <nav> 
-                        <div class="menu">
-                            <ul>
-                                <li><a href="index.html">Inicio</a> </li>
-                                <li><a href="quienessomos.html">Quienes somos </a></li>
-                                <li><a href="productos.html">Productos </a></li>
-                                <li><a href="promos-servicios.html"> Promociones y servicios</a></li>
-                                <li><a href="Formulario-de-conctacto.html">Formulario de conctacto</a></li>
-                            </ul>
+                    <div class="container">
+                        <div class=" row justify-content-start align-items-center">
+                          <div class="col-6 text-align">  
+                            <h1>Panaderia caffe Francia </h1>
+                          </div>
+                          <div class="col-6 text-align"> 
+                            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                                <a class="navbar-brand" href="index.html">Inicio</a>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                  <span class="navbar-toggler-icon"></span>
+                                </button>
+                              
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                  <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item active">
+                                      <a class="nav-link" href="quienessomos.html">Conocenos <span class="sr-only">(current)</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link" href="productos.html">Productos</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link" href="promos-servicios.html">Promociones</a>
+                                    </li>
+                                    <li class="nav-item">
+                                     <a class="nav-link" href="Formulario-de-conctacto.html">Contactanos</a>
+                                    </li>
+                                  </ul>
+                                </div>
+                            </div>
+                              </nav>
+
+                          </div> 
                         </div>
-                    </nav>
+                    </div>  
                 </header> 
-             
-
                 <section> 
-                    <div class="boton">
                             <h2> Panaderia caffe Francia </h2>
-
-                        <div class="visita">
-                            <a href="#visitanos"> visitanos</a>
-                        </div>  
-                    </div>   
+                     <div class="row justify-content-center">
+                         <div class="col-4 text-center">
+                            <div class="btn btn-danger"> <a href="#visitanos"> visitanos</a> </div>                 
+                         </div>
+                    </div>
+                
                 </section>
-
-            <article>  
+                <div class="row justify-content-center">
+                  <div class="col-12 col-md-6 col-lg-4">
+                  <article>  
                     <p>Somos una Panadería y cafeteria con 9 años de trabajo en el corazon de la ciudad. 
                     Desde nuestro comienzo y a través de años de esfuezo y crecimiento logramos mantener nuestra filosofí de trabajar todos los productos artesanalmente, con la mejor calidad de materia prima y en un clima de empresa familiar.
                     Nuestro compromiso artesanal hace que trabajemos como equipo y valoremos la dedicación y experiencia de los protagonistas de cada paso de la elaboración, distribución; y venta de nuestros productos.</p>
-                    <img src="imagenes/muffins.jpg" alt="muffins" title="muffins">
-             </article>
+                         <img class="img-thumbnail" src="imagenes/muffins.jpg" alt="muffins">
 
-            <div class="imagen">
-                <img src="imagenes/medialunas.jpg" alt="Kiosco-cafe Francia" title="Kiosco-cafe Francia">
-                <img src="imagenes/panaderia.jpg" alt="Kiosco-cafe Francia" title="Kiosco-cafe Francia">
-                <img src="imagenes/panaderia-local.jpg" alt="Kiosco-cafe Francia" title="Kiosco-cafe Francia">
-                <img src="imagenes/sandwichs-chips.jpg" alt="Kiosco-cafe Francia" title="Kiosco-cafe Francia">
-                <img src="imagenes/bagel.jpg" alt="Kiosco-cafe Francia" title="Kiosco-cafe Francia">
+                  </article>
+                </div>
+                </div>
             </div>
 
+            <div class="imagen">
+                <div class="imagenes">
+                    <img src="imagenes/medialunas.jpg" alt="Kiosco-cafe Francia" title="Kiosco-cafe Francia">
+                    <img src="imagenes/panaderia.jpg" alt="Kiosco-cafe Francia" title="Kiosco-cafe Francia">
+                    <img src="imagenes/panaderia-local.jpg" alt="Kiosco-cafe Francia" title="Kiosco-cafe Francia">
+                    <img src="imagenes/sandwichs-chips.jpg" alt="Kiosco-cafe Francia" title="Kiosco-cafe Francia">
+                    <img src="imagenes/bagel.jpg" alt="Kiosco-cafe Francia" title="Kiosco-cafe Francia">
+                </div>
+                
                 <section> 
                     <div id="visitanos">
                         <div class="direccion">
