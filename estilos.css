@@ -1,229 +1,153 @@
-* { background-color: #f7dac6;}
-
-*{margin: 0;
-    padding: 0;
-box-sizing: border-box;
+* {
+  background-color: #f7dac6;
 }
-html,body{
-    width: 100%;
-    height: 100%;
+h1{
+  display: inline;
+  font-family: "Dancing Script", cursive;
+  color: #4eb3c7;
+  font-size: 45px;
 }
-
-header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;           
+.bg-light{
+  background-color:#f7dac6 !important;
 }
-
-h1 {font-family: 'Dancing Script', cursive;
- color:#4eb3c7;
- font-size: 45px;
- margin-left: 30px;
- margin-bottom: 30px;
- font-weight: bold;
- transition: all 3s;
+ul{
+  display: inline-block;
 }
-h1:hover{
-    height: auto;
-    width: auto; 
+li{
+  display: inline-block;
+  list-style-type:none;
+  margin: 20px 15px;
 }
-    
-header nav{ display: flex;
-    justify-content: flex-end;
-    margin-top: 15px;
-    flex-wrap: wrap;
-}
-
-header nav ul li{
-    display: inline-block;
-    list-style-type: none;
-    margin:10px 10px;
-}
-
-header nav ul li a{ color: #b3afad;
-    font-size: 17px;
-    text-decoration: none;
-    margin: 10px 5px;
-    
-}
-header nav ul li a:hover{
- color: #2e2d2d
-}
-
 h2{
-    font-size: 50px;
-    font-family: 'Dancing Script', cursive;
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: 50px;
+  font-size: 50px;
+  font-family: "Dancing Script", cursive;
+  text-align: center;
 }
-  
-.visita{
- text-align: center;
-}
-
-.vsita a:hover{
-    height: 250px;
-    width: 500px;
-   
+.btn-danger{ font-size: 25px;
+ text-decoration: none;
+ background-color: #d4723d;
+ margin-bottom: 20px;
 }
 
-.visita a{
-    display: inline-block;
-    text-decoration: none;
-    background-color:#d4723d;
-    font-weight: normal;
-    height: 40px;
-    width: 150px;
-    border-radius: 3px;
-    margin-bottom: 50px;
-    font-size: 30px;
-    color: aliceblue;
-    font-weight: bold;
-    transition: all 3s;
+
+article img {
+  display: flex;
+  justify-content: flex-start;
+  width: auto;
+  height: 300px;
+  margin-left: 95px;
+  flex-wrap: wrap;
+}
+.imagen img {
+  display: inline-block;
+  width: 350px;
+  height: auto;
+  margin: 20px 30px;
+}
+.imagenes {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-article p{
-    display: flex;
-    justify-content: flex-start;
-    width: 600px;
-    height: auto;
-    font-size: 20px;
-    font-family: 'Courier New', Courier, monospace;
-    margin-left: 50px;
-    margin-bottom: 50px;
-}
-article{
-    display: flex;
-    flex-direction: row;
+
+.imagen {
+  animation-name: scale-in-center;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-duration: 2.5s;
 }
 
-article img{
-    display: flex;
-    justify-content: flex-start;
-    width: auto;  
-    height: 300px;
-    margin-left: 95px;
-    flex-wrap: wrap
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.imagen img{
-    display: inline-block;
-    width: 350px;
-    height: auto;
-    margin: 20px 30px;      
-}
-@keyframes scale-in-center {
-    0% {
-      -webkit-transform: scale(0);
-              transform: scale(0);
-      opacity: 1;
-    }
-    100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      opacity: 1;
-    }
-  }
 
-  .imagen{
-    animation-name: scale-in-center;
-    animation-iteration-count: 1;
-    animation-timing-function: linear;
-    animation-duration: 2.5s;
+.google {
+  display: flex;
+  justify-content: center;
+  margin-right: 15px;
 }
-    
-.contenedor{
+
+section .direccion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 95px;
+  margin-top: 25px;
+}
+
+.datos p {
+  display: flex;
+  font-size: 20px;
+  color: #4f4037;
+  background-color: #fad3bb;
+  height: 200px;
+  width: auto;
+  align-items: center;
+  align-content: center;
+  line-height: 1.8;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #f8c5a5;
+  height: 80px;
+  width: auto;
+  margin-top: 10px;
+  text-align: center;
+}
+@media (max-width: 950px) {
+  h1 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-        
-}
-            
-.google{
-    display: flex;
-    justify-content: center;
-    margin-right: 15px;
-}
-    
+  }
 
-
-section .direccion{
+  .visita {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    margin-left: 95px;
-    margin-top: 25px;
-        
-}
-
-
-    .datos p{
-        display: flex;
-       font-size: 20px;
-        color: #4f4037;
-        background-color: #fad3bb;
-        height: 200px;
-        width: auto;
-        align-items: center;
-        align-content: center;
-        line-height: 1.8;
-        margin-top: 30px;
-        border-radius: 10px;
-    }
-
-    footer{
-        background-color: #f8c5a5;
-        height: 80px;
-        width: auto;
-        margin-top: 10px;
-        text-align: center;
-    
-    }
-    @media (max-width: 1150px)
-{
-    h1{
-        display: flex;
-        flex-direction: column;
-     }
-
-  h2{
-        display: flex;
-        text-align: start; 
-       
-    }
-    .visita{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-    }
-     nav ul {
+  }
+  nav ul {
     display: flex;
-      flex-direction: column;  
-      justify-content: flex-start;   
-         }
-    
-    section .direccion{
-        display: flex;
-        flex-direction: column;
-        }
+    flex-direction: column;
+    justify-content: flex-start;
+  }
 
-        iframe{
-            width: auto;
-            height: auto;
-        }
-
-  .imagen{
+  section .direccion {
     display: flex;
-    flex-direction:row;
+    flex-direction: column;
+  }
+
+  iframe {
     width: auto;
     height: auto;
-    flex-wrap:wrap;
-    
-  }  
-  
- article,p{
+  }
+
+  .imagen {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    flex-wrap: wrap;
+  }
+
+  .imagenes {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    column-gap: 20px;
+  }
+
+  article,
+  p {
     display: flex;
     flex-direction: column;
     width: auto;
@@ -231,12 +155,7 @@ section .direccion{
     font-weight: bold;
   }
 
-  article img{
+  article img {
     display: none;
-  }      
+  }
 }
-
-           
-
-
-    
