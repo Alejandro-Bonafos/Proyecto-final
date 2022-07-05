@@ -1,0 +1,564 @@
+body {
+  background-image: linear-gradient(
+    20deg,
+    hsl(24deg 71% 67%) 0%,
+    hsl(24deg 70% 70%) 5%,
+    hsl(25deg 68% 73%) 12%,
+    hsl(25deg 66% 75%) 21%,
+    hsl(25deg 62% 78%) 37%,
+    hsl(25deg 58% 81%) 65%,
+    hsl(24deg 70% 78%) 78%,
+    hsl(24deg 80% 76%) 86%,
+    hsl(23deg 88% 74%) 91%,
+    hsl(21deg 94% 72%) 96%,
+    hsl(20deg 100% 71%) 100%
+  );
+}
+
+/*-----------------------------NAVBAR--------------------------*/
+
+.navbar {
+  background-image: linear-gradient(
+    35deg,
+    hsl(25deg 63% 71%) 0%,
+    hsl(25deg 67% 67%) 3%,
+    hsl(25deg 70% 64%) 7%,
+    hsl(24deg 72% 61%) 11%,
+    hsl(24deg 73% 60%) 15%,
+    hsl(24deg 74% 67%) 19%,
+    hsl(24deg 74% 73%) 50%,
+    hsl(24deg 72% 80%) 63%,
+    hsl(24deg 73% 78%) 74%,
+    hsl(24deg 74% 73%) 83%,
+    hsl(24deg 74% 67%) 92%,
+    hsl(25deg 73% 62%) 100%
+  );
+  height: 90px;
+}
+.navbar-nav {
+  margin-top: 10px;
+  margin-left: 550px;
+  column-gap: 30px;
+}
+
+.nav-item a {
+  font-size: 20px;
+}
+
+/*---logo---*/
+.logo__container {
+  height: 70px;
+  width: 70px;
+  margin-top: 15px;
+}
+
+.logo__container img {
+  width: 70px;
+  height: 70px;
+}
+
+/*---fin del logo---*/
+
+/*------------------------------------------- FIN DE NAVBAR---------------------------*/
+
+/*====header====*/
+.header__container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 700px;
+}
+
+.header__contenido {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  /* background-color: blanchedalmond; */
+  margin-bottom: 150px;
+  width: 90%;
+}
+
+.image__container {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: violet; */
+}
+.image {
+  height: 400px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: cornflowerblue; */
+}
+
+.image img {
+  height: auto;
+  width: 350px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 1px rgba(87, 86, 86, 0.2);
+}
+
+.text {
+  height: 350px;
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(161, 86, 36, 0.1), rgba(161, 86, 36, 0.1));
+  border-radius: 10px;
+}
+.text__content {
+  width: 85%;
+  text-align: center;
+}
+.text__content p {
+  font-size: 18px;
+}
+
+/* =====titulo==== */
+.title__container {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.title h2 {
+  font-size: 45px;
+  font-weight: 700;
+  margin-top: 150px;
+  font-family: "Dancing Script", cursive;
+  color: #0a0a0a;
+}
+/*---------------------------BOTONES----------------------------*/
+
+.boton {
+  margin: auto;
+
+  color: black;
+}
+
+/*---------------------------Img----------------------------*/
+
+.imagen img {
+  display: inline-block;
+  width: 350px;
+  height: auto;
+  margin: 20px 30px;
+}
+.imagenes {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+/*---------------------------Direccion----------------------------*/
+
+#visitanos{
+  background-image: linear-gradient(
+  175deg,
+  hsl(24deg 71% 67%) 0%,
+  hsl(24deg 70% 70%) 5%,
+  hsl(25deg 68% 73%) 12%,
+  hsl(25deg 66% 75%) 21%,
+  hsl(25deg 62% 78%) 37%,
+  hsl(25deg 58% 81%) 65%,
+  hsl(24deg 70% 78%) 78%,
+  hsl(24deg 80% 76%) 86%,
+  hsl(23deg 88% 74%) 91%,
+  hsl(21deg 94% 72%) 96%,
+  hsl(20deg 100% 71%) 100%
+);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: auto;
+  height: 150px;
+}
+
+.google{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  height: 350px;
+  margin-top: 20px;
+}
+
+/* Extra small devices (phones, 480px and down) */
+@media only screen and (max-width: 480px) {
+  .navbar-nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 0;
+    column-gap: 0;
+  }
+
+  /* ======HEADER===== */
+
+  .header__container {
+    height: 1000px;
+    width: 100%;
+  }
+
+  .title__container {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .title {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title h2 {
+    text-align: center;
+  }
+
+  .header__contenido {
+    flex-direction: column;
+    height: 500px;
+    width: 100%;
+
+    background: linear-gradient(rgba(68, 24, 3, 0.6), rgba(68, 24, 3, 0.6)),
+      url("../Imagenes/muffins.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+  }
+  .text {
+    width: 100%;
+    margin: auto;
+    height: auto;
+  }
+
+  .text__content {
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(rgba(160, 55, 7, 0.5), rgba(160, 55, 7, 0.5));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+  .text__content p {
+    font-size: 17px;
+    color: lightgray;
+    width: 90%;
+  }
+
+  .image__container {
+    display: none;
+  }
+  .google {
+    display: none;
+  }
+}
+/* Small devices (portrait tablets and large phones, 481px and 768px) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .navbar-nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 0;
+    column-gap: 0;
+  }
+
+  /* ======HEADER===== */
+
+  .header__container {
+    height: 1000px;
+    width: 100%;
+  }
+
+  .title__container {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .title {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title h2 {
+    text-align: center;
+  }
+
+  .header__contenido {
+    flex-direction: column;
+    height: 500px;
+    width: 100%;
+
+    background: linear-gradient(rgba(68, 24, 3, 0.6), rgba(68, 24, 3, 0.6)),
+      url("../Imagenes/muffins.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+  }
+  .text {
+    width: 100%;
+    margin: auto;
+    height: auto;
+  }
+
+  .text__content {
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(rgba(160, 55, 7, 0.5), rgba(160, 55, 7, 0.5));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+  .text__content p {
+    font-size: 17px;
+    color: lightgray;
+    width: 90%;
+  }
+
+  .image__container {
+    display: none;
+  }
+  .google {
+    display: none;
+  }
+}
+/* Medium devices (landscape tablets, 768px and 1024px) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .navbar-nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 0;
+    column-gap: 0;
+  }
+
+  /* ======HEADER===== */
+
+  .header__container {
+    height: 1000px;
+    width: 100%;
+  }
+
+  .title__container {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .title {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title h2 {
+    text-align: center;
+  }
+
+  .header__contenido {
+    width: 100%;
+    flex-direction: column;
+    height: 500px;
+    width: 100%;
+    background: linear-gradient(rgba(68, 24, 3, 0.6), rgba(68, 24, 3, 0.6)),
+      url("../Imagenes/muffins.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+  }
+  .text {
+    width: 100%;
+    margin: auto;
+    height: auto;
+  }
+
+  .text__content {
+    width: 80%;
+    margin: auto;
+    height: 300px;
+    background: linear-gradient(rgba(160, 55, 7, 0.5), rgba(160, 55, 7, 0.5));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+  .text__content p {
+    font-size: 17px;
+    color: lightgray;
+    width: 90%;
+  }
+
+  .image__container {
+    display: none;
+  }
+  .google {
+    display: none;
+  }
+}
+
+/* Largue devices ( landscape desktop, 1025px and 1200px) */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+  .navbar-nav {
+    margin-left: 350px;
+    column-gap: 20px;
+  }
+}
+
+/*---------------------------inicio quienes somos css----------------------------*/
+
+.quienes__somos {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "header header header "
+    "texto texto aside "
+    "texto texto aside "
+    "footer footer footer";
+}
+
+header {
+  grid-area: header;
+  margin-bottom: 20px;
+}
+
+.content__intro {
+  grid-area: texto;
+  width: 85%;
+  margin: auto;
+}
+.content__intro p {
+  height: auto;
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+aside {
+  grid-area: aside;
+  width: 70%;
+  height: auto;
+  margin-left: 150px;
+}
+
+.artesanales p {
+  height: auto;
+  width: 95%;
+  margin: auto;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.artesanales img {
+  margin-top: 50px;
+  width: 80%;
+  height: auto;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.content__intro img {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: auto;
+}
+.fotos {
+  margin-top: 10px;
+}
+
+aside,
+h2 {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Dancing Script", cursive;
+  font-weight: bold;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+article,
+p {
+  font-size: 18px;
+  margin: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+  height: 70px;
+  width: auto;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Extra small devices (phones, 480px and down) */
+@media only screen and (max-width: 480px) {
+  navbar-nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 0;
+    column-gap: 0;
+  }
+  aside {
+    display: none;
+  }
+}
+/* Small devices (portrait tablets and large phones, 481px and 768px) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .navbar-nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 0;
+    column-gap: 0;
+  }
+  aside {
+    display: none;
+  }
+}
+/* Medium devices (landscape tablets, 768px and 1024px) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  aside {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: auto;
+  }
+}
+
+/* Largue devices ( landscape desktop, 1025px and 1200px) */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+}
+
+/*---------------------------inicio css de promos----------------------------*/
