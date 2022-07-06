@@ -39,6 +39,26 @@ body {
   margin-top: 10px;
   margin-left: 550px;
   column-gap: 30px;
+
+}
+.fondo{
+  background-image: linear-gradient(
+    35deg,
+    hsl(25deg 63% 71%) 0%,
+    hsl(25deg 67% 67%) 3%,
+    hsl(25deg 70% 64%) 7%,
+    hsl(24deg 72% 61%) 11%,
+    hsl(24deg 73% 60%) 15%,
+    hsl(24deg 74% 67%) 19%,
+    hsl(24deg 74% 73%) 50%,
+    hsl(24deg 72% 80%) 63%,
+    hsl(24deg 73% 78%) 74%,
+    hsl(24deg 74% 73%) 83%,
+    hsl(24deg 74% 67%) 92%,
+    hsl(25deg 73% 62%) 100%
+  );
+  padding: 15px;
+  
 }
 
 .nav-item a {
@@ -69,7 +89,7 @@ body {
   justify-content: center;
   align-items:flex-start;
   flex-direction: column;
-  height: 100vh;
+  height: 700px;
 }
 
 .header__contenido {
@@ -132,7 +152,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 100px;
+  margin-top: -350px;
 }
 
 .title h2 {
@@ -202,6 +222,7 @@ body {
 
 /* Extra small devices (phones, 480px and down) */
 @media only screen and (max-width: 480px) {
+ 
   .navbar-nav {
     display: flex;
     justify-content: center;
@@ -213,8 +234,9 @@ body {
   /* ======HEADER===== */
 
   .header__container {
-    height: 1000px;
+    height: 900px;
     width: 100%;
+    margin-top: 100px;
   }
 
   .title__container {
@@ -238,6 +260,7 @@ body {
     flex-direction: column;
     height: 500px;
     width: 100%;
+    margin-top: 50px;
 
     background: linear-gradient(rgba(68, 24, 3, 0.6), rgba(68, 24, 3, 0.6)),
       url("../Imagenes/muffins.jpg");
@@ -272,6 +295,13 @@ body {
   }
   .google {
     display: none;
+  }
+  .imagenes{
+    width: 90%;
+    margin: auto;
+  }
+  .item{
+    width: 100%;
   }
 }
 /* Small devices (portrait tablets and large phones, 481px and 768px) */
@@ -346,6 +376,13 @@ body {
   }
   .google {
     display: none;
+  }
+   .imagenes{
+    width: 90%;
+    margin: auto;
+  }
+  .item{
+    width: 100%;
   }
 }
 /* Medium devices (landscape tablets, 768px and 1024px) */
