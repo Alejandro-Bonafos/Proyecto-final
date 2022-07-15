@@ -100,6 +100,7 @@ body {
   /* background-color: blanchedalmond; */
   margin-bottom: 50px;
   width: 90%;
+  margin: auto;
 }
 
 .image__container {
@@ -108,7 +109,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: violet; */
 }
 .image {
   height: 400px;
@@ -117,7 +117,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: cornflowerblue; */
 }
 
 .image img {
@@ -166,7 +165,6 @@ body {
 
 .boton {
   margin: auto;
-
   color: black;
 }
 
@@ -560,13 +558,7 @@ footer {
 
 /* Extra small devices (phones, 480px and down) */
 @media only screen and (max-width: 480px) {
-  navbar-nav {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-left: 0;
-    column-gap: 0;
-  }
+  
   aside {
     display: none;
   }
