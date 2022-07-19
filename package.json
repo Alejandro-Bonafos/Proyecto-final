@@ -4,8 +4,8 @@
   "license": "MIT",
   "name": "nombre-de-mi-package",
   "scripts": {
-    "watch:css": "nodemon -e scss -x \"npm run build:css\"",
-    "build:css": "node-sass --output-style compressed estilos/t-productos.scss estilos/segunda-mitad.css"
+    "watch:css": "nodemon -e scss -x \"npm run build:sass\"",
+    "build:sass": "node-sass --include-path scss sass/index.scss  ../estilos/segunda-mitad.css"
   },
   "version": "1.0.0",
   "devDependencies": {

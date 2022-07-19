@@ -1,0 +1,63 @@
+
+.prmos-serv {
+    background-image: green;
+  }
+
+.promo {
+    display: inline-block;
+    text-align: center;
+    width: auto;
+    margin-bottom: 20px;
+}
+
+.promo p {
+    display: inline-block;
+    text-align: center;
+    width: 60%;
+    font-size: $font_medium;
+    margin-top: 10px;
+  }
+  .tabla {
+    @include flex("", center,"");
+    width: 70%;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+
+  .promo h2 {
+    margin-top: 20px;
+    font-size: $font_bigger;
+  }
+
+  th {
+    background-color: #837878;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  p {
+  text-align: center;
+}
+
+td {
+  background-color: #e6a1e6;
+  font-size: $font_medium;
+  color: #f7f7f7;
+  border: $borde;
+}
+
+.borde {
+  border: $borde;
+}
+
+
+
+@media only screen and (max-width: 480px){
+  .tabla {
+    width: 95%;
+    margin: auto;
+    display: block;
+    overflow-x: auto;
+  }
+
+}
