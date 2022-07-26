@@ -43,3 +43,13 @@ h2 {
   text-align: center;
   margin-top: $small;
 }
+.column img{
+  display: inline-block; 
+}
+img{
+width: auto;
+height: 350px;
+margin-left: 23px;
+margin-bottom: 20px;
+border-radius: 10px;
+}
