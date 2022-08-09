@@ -1,17 +1,17 @@
 :root {
   --color: linear-gradient(35deg, hsl(25deg 63% 71%) 0%, hsl(25deg 67% 67%) 3%, hsl(25deg 70% 64%) 7%, hsl(24deg 72% 61%) 11%, hsl(24deg 73% 60%) 15%, hsl(24deg 74% 67%) 19%, hsl(24deg 74% 73%) 50%, hsl(24deg 72% 80%) 63%, hsl(24deg 73% 78%) 74%, hsl(24deg 74% 73%) 83%, hsl(24deg 74% 67%) 92%, hsl(25deg 73% 62%) 100%) ; }
 
-/*COLORES*/
 /*ESPACIOS*/
 /*FUENTES*/
 /* FONT SIZE*/
 .navbar {
   background-image: var(--color);
-  height: 90px; }
+  height: 90px;
+  width: 100%; }
 
 .navbar-nav {
   margin-top: 10px;
-  margin-left: 550px;
+  margin-left: 530px;
   column-gap: 30px; }
 
 .fondo {
@@ -43,16 +43,46 @@ footer {
   height: 70px;
   width: auto;
   text-align: center;
-  margin-top: 20px; }
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  background-image: var(--color);
+  padding-top: 10px;
+  padding-bottom: 10px; }
 
-/* @media only screen and (max-width: 480px) {
-   /* .navbar-nav {
-        /*@include flex(column,center);
-        margin-left: 0;
-        column-gap: 0;
-    }
+.cafe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  flex-wrap: wrap;
+  height: auto;
+  margin: auto; }
 
-}*/
+.redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 150px;
+  flex-wrap: wrap;
+  gap: 5px; }
+
+.fa-brands {
+  color: #222121; }
+
+.fa-coffee {
+  color: #222121; }
+
+@media only screen and (max-width: 480px) {
+  .navbar-nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 0;
+    column-gap: 0; } }
+
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   .navbar-nav {
     display: flex;
@@ -74,6 +104,19 @@ footer {
     margin-left: 350px;
     column-gap: 20px; } }
 
+@media only screen and (min-width: 1201px) and (max-width: 1300px) {
+  .navbar-nav {
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 490px;
+    column-gap: 28px; } }
+
+.tabla {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: center; }
+
 .prmos-serv {
   background-image: var(--color); }
 
@@ -89,15 +132,6 @@ footer {
   width: 60%;
   font-size: 18px;
   margin-top: 10px; }
-
-.tabla {
-  display: flex;
-  flex-direction: "";
-  justify-content: center;
-  align-items: "";
-  width: 70%;
-  margin: auto;
-  margin-bottom: 30px; }
 
 .promo h2 {
   margin-top: 20px;
@@ -126,3 +160,141 @@ td {
     margin: auto;
     display: block;
     overflow-x: auto; } }
+
+/* Small devices (portrait tablets and large phones, 481px and 768px) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .tabla {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center; } }
+
+/* Medium devices (landscape tablets, 768px and 1024px) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .tabla {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center; } }
+
+/* Largue devices ( landscape desktop, 1025px and 1200px) */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+  .tabla {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center; } }
+
+:root {
+  --color: linear-gradient(35deg, hsl(25deg 63% 71%) 0%, hsl(25deg 67% 67%) 3%, hsl(25deg 70% 64%) 7%, hsl(24deg 72% 61%) 11%, hsl(24deg 73% 60%) 15%, hsl(24deg 74% 67%) 19%, hsl(24deg 74% 73%) 50%, hsl(24deg 72% 80%) 63%, hsl(24deg 73% 78%) 74%, hsl(24deg 74% 73%) 83%, hsl(24deg 74% 67%) 92%, hsl(25deg 73% 62%) 100%)
+; }
+
+.navbar {
+  background-image: var(--color);
+  height: 90px; }
+
+.navbar-nav {
+  margin-top: 10px;
+  margin-left: 550px;
+  column-gap: 30px; }
+
+.fondo {
+  background-image: var(--color);
+  padding: 15px; }
+
+.nav-item a {
+  font-size: 20px; }
+
+/*---logo---*/
+.logo__container {
+  height: 70px;
+  width: 70px;
+  margin-top: 15px; }
+  .logo__container img {
+    width: 70px;
+    height: 70px; }
+
+/*---fin del logo---*/
+h2 {
+  font-family: "Dancing Script", cursive;
+  font-size: 45px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 2rem; }
+
+.titulo {
+  padding: 20px 20px; }
+
+.productos {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.column {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  row-gap: 0px; }
+
+.image {
+  width: 350px;
+  height: auto;
+  padding-bottom: 25px;
+  padding-top: 25px; }
+
+/* Extra small devices (phones, 480px and down) */
+@media only screen and (max-width: 480px) {
+  .column {
+    height: auto;
+    width: 95%;
+    margin: auto;
+    gap: 5px;
+    row-gap: 0px; }
+  .image {
+    width: 95%;
+    margin: auto;
+    height: 350px;
+    border-radius: 15%; } }
+
+/* Small devices (portrait tablets and large phones, 481px and 768px) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .column {
+    height: auto;
+    width: 100%;
+    margin: auto;
+    gap: 5px;
+    row-gap: 0px; }
+  .image {
+    width: 80%;
+    margin: auto;
+    height: 400px; } }
+
+/* Medium devices (landscape tablets, 768px and 1024px) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .column {
+    height: auto;
+    width: 100%;
+    margin: auto;
+    gap: 5px;
+    row-gap: 0px; }
+  .image {
+    width: 85%;
+    margin: auto;
+    height: 400px; } }
+
+/* Largue devices ( landscape desktop, 1025px and 1200px) */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+  .column {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    row-gap: 0px; }
+  .image {
+    width: 40%;
+    height: auto; } }

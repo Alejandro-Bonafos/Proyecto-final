@@ -1,6 +1,5 @@
-@mixin flex ($direction,$justify,$align){
+@mixin form-page($justify,$align){
     display: flex;
-    flex-direction:$direction;
     justify-content: $justify;
     align-items: $align;
     

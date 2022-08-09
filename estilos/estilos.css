@@ -153,7 +153,10 @@ body {
   margin-top: -350px;
 }
 
-.title h2 {
+h1{
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
   font-size: 45px;
   font-weight: 700;
   margin-top: 100px;
@@ -217,15 +220,57 @@ body {
   margin-top: 20px;
 }
 
+footer {
+  height: 70px;
+  width: auto;
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  background-image: var(--color);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.cafe{
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  flex-wrap: wrap;
+  height: auto;
+  margin: auto;
+}
+
+.redes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 150px;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.fa-brands{
+  color: rgb(34, 33, 33);
+
+}
+
+.fa-coffee{
+  color: rgb(34, 33, 33);
+}
+
+
 /* Extra small devices (phones, 480px and down) */
 @media only screen and (max-width: 480px) {
  
   .navbar-nav {
     display: flex;
-    justify-content: center;
     flex-direction: column;
     margin-left: 0;
     column-gap: 0;
+    margin-top: 0;
   }
 
   /* ======HEADER===== */
@@ -249,7 +294,7 @@ body {
     align-items: center;
   }
 
-  .title h2 {
+   h1 {
     text-align: center;
   }
 
@@ -330,8 +375,8 @@ body {
     justify-content: center;
     align-items: center;
   }
-
-  .title h2 {
+ 
+  h1 {
     text-align: center;
   }
 
@@ -411,8 +456,8 @@ body {
     justify-content: center;
     align-items: center;
   }
-
-  .title h2 {
+ 
+  .title h1 {
     text-align: center;
   }
 
@@ -464,6 +509,7 @@ body {
     margin-left: 350px;
     column-gap: 20px;
   }
+  
 }
 
 /*---------------------------inicio quienes somos css----------------------------*/
@@ -488,7 +534,10 @@ header {
   grid-area: texto;
   width: 85%;
   margin: auto;
+  
 }
+
+
 .content__intro p {
   height: auto;
   width: 95%;
@@ -496,6 +545,11 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  
+}
+
+.intro{
+  text-align: center;
 }
 aside {
   grid-area: aside;
@@ -509,7 +563,8 @@ aside {
   width: 95%;
   margin: auto;
   display: flex;
-  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+
 }
 .artesanales img {
   margin-top: 50px;
@@ -520,6 +575,7 @@ aside {
 footer {
   grid-area: footer;
 }
+
 
 .content__intro img {
   margin-top: 20px;
@@ -548,12 +604,7 @@ p {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-footer {
-  height: 70px;
-  width: auto;
-  text-align: center;
-  margin-top: 20px;
-}
+
 
 /* Extra small devices (phones, 480px and down) */
 @media only screen and (max-width: 480px) {
@@ -588,7 +639,7 @@ footer {
 /* Largue devices ( landscape desktop, 1025px and 1200px) */
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
 }
-/*---------------------------inicio css contactos----------------------------*/
+/*---------------------------inicio css contactos/formulario----------------------------*/
 
 .contacto{
   width: 100%;
@@ -627,6 +678,13 @@ input{
 }
 /* Extra small devices (phones, 480px and down) */
 @media only screen and (max-width: 480px) {
+  .navbar-nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 0;
+    column-gap: 0;
+  }
   
   .formularios {
     flex-direction: column;

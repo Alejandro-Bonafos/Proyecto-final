@@ -2,11 +2,12 @@
     background-image: var(--color);
 
     height: 90px;
+    width: 100%;
   }
   
   .navbar-nav {
     margin-top: 10px;
-    margin-left: 550px;
+    margin-left: 530px;
     column-gap: 30px;
   }
   
@@ -44,15 +45,53 @@
     width: auto;
     text-align: center;
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    background-image: var(--color);
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .cafe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    flex-wrap: wrap;
+    height: auto;
+    margin: auto;
+  }
+
+  .redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 150px;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .fa-brands{
+    color: rgb(34, 33, 33);
+
+  }
+
+  .fa-coffee{
+    color: rgb(34, 33, 33);
   }
 
 
   @media only screen and (max-width: 480px) {
-   .navbar-nav {
-      @include flex (column,center,none);
+    .navbar-nav {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
       margin-left: 0;
       column-gap: 0;
     }
+
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
@@ -81,4 +120,14 @@
       margin-left: 350px;
       column-gap: 20px;
     }
+    
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1300px){
+  .navbar-nav{
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 490px;
+    column-gap: 28px;
+  }
 }

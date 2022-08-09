@@ -43,13 +43,102 @@ h2 {
   text-align: center;
   margin-top: $small;
 }
-.column img{
-  display: inline-block; 
+
+.titulo{
+  padding: 20px 20px;
 }
-img{
-width: auto;
-height: 350px;
-margin-left: 23px;
-margin-bottom: 20px;
-border-radius: 10px;
+
+.productos{
+  @include form-page(center, center);
+  
+}
+
+.column{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  row-gap: 0px;
+}
+
+.image{
+  width: 350px;
+  height: auto;
+  padding-bottom: 25px;
+  padding-top: 25px;
+}
+
+/* Extra small devices (phones, 480px and down) */
+@media only screen and (max-width: 480px) {
+
+  .column{
+    height: auto;
+    width: 95%;
+    margin: auto;
+    gap: 5px;
+    row-gap: 0px;
+  }
+  .image{
+    width: 95%;
+    margin: auto;
+    height: 350px;
+    border-radius: 15%;
+  }
+
+}
+/* Small devices (portrait tablets and large phones, 481px and 768px) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .column{
+    height: auto;
+    width: 100%;
+    margin: auto;
+    gap: 5px;
+    row-gap: 0px;
+  }
+  .image{
+    width: 80%;
+    margin: auto;
+    height: 400px;
+    
+  }
+
+}
+/* Medium devices (landscape tablets, 768px and 1024px) */
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+
+  .column{
+    height: auto;
+    width: 100%;
+    margin: auto;
+    gap: 5px;
+    row-gap: 0px;
+  }
+  .image{
+    width: 85%;
+    margin: auto;
+    height: 400px;
+    
+  }
+}
+
+/* Largue devices ( landscape desktop, 1025px and 1200px) */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+
+  .column{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    row-gap: 0px;
+  }
+  
+  .image{
+    width: 40%;
+    height: auto;
+    
+  }
 }
