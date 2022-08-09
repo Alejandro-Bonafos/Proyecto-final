@@ -1,0 +1,19 @@
+:root {
+  --color: linear-gradient(35deg, hsl(25deg 63% 71%) 0%, hsl(25deg 67% 67%) 3%, hsl(25deg 70% 64%) 7%, hsl(24deg 72% 61%) 11%, hsl(24deg 73% 60%) 15%, hsl(24deg 74% 67%) 19%, hsl(24deg 74% 73%) 50%, hsl(24deg 72% 80%) 63%, hsl(24deg 73% 78%) 74%, hsl(24deg 74% 73%) 83%, hsl(24deg 74% 67%) 92%, hsl(25deg 73% 62%) 100%) ;
+}
+
+/*ESPACIOS*/
+
+  $large: 6rem;
+  $medium: 2.4rem;
+  $small:2rem;
+  $xsmall:0.5rem;
+
+  $borde: 1px solid black;
+/*FUENTES*/
+$fuente-primaria: "Dancing Script", cursive;
+$fuente-secundaria:Arial, Helvetica, sans-serif;
+
+/* FONT SIZE*/
+$font_medium: 18px;
+$font_bigger: 55px;

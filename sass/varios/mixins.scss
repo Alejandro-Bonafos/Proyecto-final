@@ -1,0 +1,6 @@
+@mixin form-page($justify,$align){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    
+}

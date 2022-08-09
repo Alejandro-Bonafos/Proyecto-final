@@ -1,0 +1,105 @@
+
+
+.tabla {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+ 
+}
+
+.prmos-serv {
+    background-image: var(--color);
+
+  }
+
+.promo {
+    display: inline-block;
+    text-align: center;
+    width: auto;
+    margin-bottom: 20px;
+}
+
+.promo p {
+    display: inline-block;
+    text-align: center;
+    width: 60%;
+    font-size: $font_medium;
+    margin-top: 10px;
+  }
+
+
+  .promo h2 {
+    margin-top: 20px;
+    font-size: $font_bigger;
+  }
+
+  th {
+    background-color: #837878;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  p {
+  text-align: center;
+}
+
+td {
+  background-color: #e6a1e6;
+  font-size: $font_medium;
+  color: #f7f7f7;
+  border: $borde;
+}
+
+.borde {
+  border: $borde;
+}
+
+
+
+@media only screen and (max-width: 480px){
+  .tabla {
+    width: 95%;
+    margin: auto;
+    display: block;
+    overflow-x: auto;
+  }
+  
+}
+
+
+/* Small devices (portrait tablets and large phones, 481px and 768px) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .tabla {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+   
+  }
+  
+}
+/* Medium devices (landscape tablets, 768px and 1024px) */
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+  .tabla {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+   
+  }
+  
+}
+
+/* Largue devices ( landscape desktop, 1025px and 1200px) */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+
+  .tabla {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+   
+  }
+
+}

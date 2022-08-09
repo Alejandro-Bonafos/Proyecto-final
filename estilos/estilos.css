@@ -97,7 +97,6 @@ body {
   justify-content: center;
   align-items:flex-start;
   height: 500px;
-  /* background-color: blanchedalmond; */
   margin-bottom: 50px;
   width: 90%;
   margin: auto;
@@ -154,7 +153,10 @@ body {
   margin-top: -350px;
 }
 
-.title h2 {
+h1{
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
   font-size: 45px;
   font-weight: 700;
   margin-top: 100px;
@@ -218,15 +220,57 @@ body {
   margin-top: 20px;
 }
 
+footer {
+  height: 70px;
+  width: auto;
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  background-image: var(--color);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.cafe{
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  flex-wrap: wrap;
+  height: auto;
+  margin: auto;
+}
+
+.redes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 150px;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.fa-brands{
+  color: rgb(34, 33, 33);
+
+}
+
+.fa-coffee{
+  color: rgb(34, 33, 33);
+}
+
+
 /* Extra small devices (phones, 480px and down) */
 @media only screen and (max-width: 480px) {
  
   .navbar-nav {
     display: flex;
-    justify-content: center;
     flex-direction: column;
     margin-left: 0;
     column-gap: 0;
+    margin-top: 0;
   }
 
   /* ======HEADER===== */
@@ -250,7 +294,7 @@ body {
     align-items: center;
   }
 
-  .title h2 {
+   h1 {
     text-align: center;
   }
 
@@ -331,8 +375,8 @@ body {
     justify-content: center;
     align-items: center;
   }
-
-  .title h2 {
+ 
+  h1 {
     text-align: center;
   }
 
@@ -412,8 +456,8 @@ body {
     justify-content: center;
     align-items: center;
   }
-
-  .title h2 {
+ 
+  .title h1 {
     text-align: center;
   }
 
@@ -465,6 +509,7 @@ body {
     margin-left: 350px;
     column-gap: 20px;
   }
+  
 }
 
 /*---------------------------inicio quienes somos css----------------------------*/
@@ -489,7 +534,10 @@ header {
   grid-area: texto;
   width: 85%;
   margin: auto;
+  
 }
+
+
 .content__intro p {
   height: auto;
   width: 95%;
@@ -497,6 +545,11 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  
+}
+
+.intro{
+  text-align: center;
 }
 aside {
   grid-area: aside;
@@ -510,7 +563,8 @@ aside {
   width: 95%;
   margin: auto;
   display: flex;
-  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+
 }
 .artesanales img {
   margin-top: 50px;
@@ -521,6 +575,7 @@ aside {
 footer {
   grid-area: footer;
 }
+
 
 .content__intro img {
   margin-top: 20px;
@@ -549,12 +604,7 @@ p {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-footer {
-  height: 70px;
-  width: auto;
-  text-align: center;
-  margin-top: 20px;
-}
+
 
 /* Extra small devices (phones, 480px and down) */
 @media only screen and (max-width: 480px) {
@@ -589,4 +639,193 @@ footer {
 /* Largue devices ( landscape desktop, 1025px and 1200px) */
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
 }
-/*---------------------------inicio css de promos----------------------------*/
+/*---------------------------inicio css contactos/formulario----------------------------*/
+
+.contacto{
+  width: 100%;
+  height: 100vh;
+}
+.muestra h2{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 35px;
+  text-align: center;
+}
+.muestra p{
+  width: auto;
+  height: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.formularios{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.boton{
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+}
+input{
+  margin:5px;
+  border-radius: 5px;
+}
+/* Extra small devices (phones, 480px and down) */
+@media only screen and (max-width: 480px) {
+  .navbar-nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 0;
+    column-gap: 0;
+  }
+  
+  .formularios {
+    flex-direction: column;
+  }
+
+  .datos{ 
+    width: 60%;
+    height: auto;
+    display: flex;
+    margin: auto;
+    margin-top: 50px;
+    background-color: rgb(250, 180, 74);
+  }
+  .horario{
+    width: 50%;
+    height: auto;
+    margin: auto;
+    background-color: rgb(250, 180, 74);
+  }
+
+  .tipo{
+    width: 50%;
+    height: auto;
+    margin: auto;
+  }
+  .cuadro textarea{
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    height:350px ;
+    margin: auto;
+    background-color: rgb(250, 180, 74);
+  }
+  .cuadro label{
+  margin:30px;
+  font-size: 20px;
+  display: flex;
+  background-color: rgb(250, 180, 74);
+  }
+
+  }
+/* Small devices (portrait tablets and large phones, 481px and 768px) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .navbar-nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 0;
+    column-gap: 0;
+  }
+  .formularios {
+    flex-direction: column;
+  }
+
+  .datos{ 
+    width: 40%;
+    height: auto;
+    display: flex;
+    margin: auto;
+    background-color: rgb(250, 180, 74);
+  }
+  .horario{
+    width: 30%;
+    height: auto;
+    margin: auto;
+    flex-direction: column;
+    background-color: rgb(250, 180, 74);
+  }
+
+  .tipo{
+    width: 60%;
+    height: auto;
+    margin: auto;
+  }
+  .cuadro textarea{
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    height:350px ;
+    margin: auto;
+    background-color: #f1c87a;
+    
+  }
+  .cuadro label{
+  margin:30px;
+  font-size: 20px;
+  display: flex;
+  background-color: #f1c87a;
+
+  }
+
+  }
+
+/* Medium devices (landscape tablets, 768px and 1024px) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .formularios {
+    flex-direction: column;
+  }
+
+  .datos{ 
+    width: 70%;
+    height: auto;
+    display: flex;
+    margin: auto;
+    margin-top: 50px;
+    background-color: rgb(250, 180, 74);
+  }
+  .horario{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    margin: auto;
+  }
+  .horarios, input{
+    margin-left: 25px;
+  }
+
+  .tipo{
+    width: 70%;
+    height: auto;
+    margin: auto;
+  }
+  .cuadro textarea{
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    height:250px ;
+    margin: auto;
+  }
+  .cuadro label{
+  margin:30px;
+  font-size: 20px;
+  display: flex;
+  margin-bottom: 5px;
+  background-color: rgb(250, 180, 74);
+  }
+
+  }
+
+
+/* Largue devices ( landscape desktop, 1025px and 1200px) */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+}
