@@ -95,13 +95,13 @@
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-    .navbar-nav {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      margin-left: 0;
-      column-gap: 0;
-    }
+  .navbar-nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 0;
+    column-gap: 0;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {

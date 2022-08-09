@@ -433,7 +433,7 @@ footer {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-left: 0;
+    margin-left: 350px;
     column-gap: 0;
   }
 
@@ -510,6 +510,14 @@ footer {
     column-gap: 20px;
   }
   
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1300px){
+  .navbar-nav {
+    margin-left: 450px;
+    column-gap: 20px;
+  }
+
 }
 
 /*---------------------------inicio quienes somos css----------------------------*/
@@ -689,6 +697,19 @@ input{
   .formularios {
     flex-direction: column;
   }
+  .container__input{
+    width: 100%;
+    margin: auto;
+    
+
+  }
+ 
+
+  .container__datos{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
 
   .datos{ 
     width: 60%;
@@ -739,6 +760,20 @@ input{
     flex-direction: column;
   }
 
+  .container__input{
+    width: 100%;
+    margin: auto;
+    
+
+  }
+ 
+
+  .container__datos{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
   .datos{ 
     width: 40%;
     height: auto;
@@ -784,8 +819,29 @@ input{
     flex-direction: column;
   }
 
+  .container__input{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    
+
+  }
+ 
+
+  .container__datos{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    
+  }
+
   .datos{ 
-    width: 70%;
+    width: 40%;
+    padding: 20px 20px;
     height: auto;
     display: flex;
     margin: auto;
@@ -798,6 +854,8 @@ input{
     flex-direction: row;
     height: auto;
     margin: auto;
+    background-color: rgb(250, 180, 74);
+    padding: 20px;
   }
   .horarios, input{
     margin-left: 25px;
@@ -828,4 +886,50 @@ input{
 
 /* Largue devices ( landscape desktop, 1025px and 1200px) */
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
+  .container__input{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    
+
+  }
+
+  .muestra{
+    width: 80%;
+    margin: auto;
+  }
+
+  
+ 
+
+  .container__datos{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    
+  }
+
+  .datos{ 
+    width: 40%;
+    padding: 20px 20px;
+    height: auto;
+    display: flex;
+    margin: auto;
+    margin-top: 50px;
+    background-color: rgb(250, 180, 74);
+  }
+  .horario{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    margin: auto;
+    background-color: rgb(250, 180, 74);
+    padding: 20px;
+  }
+
 }
