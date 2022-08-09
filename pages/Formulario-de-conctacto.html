@@ -57,12 +57,20 @@
         <section class="formularios">
             <form>
                 <div class="datos">
-                    <label action="Datos de contacto" method="post">
-                    <legend> Datos de contacto </legend>
-                    <label for="nombre"> </label>
-                    <input type="text" name="nombre" placeholder="Nombre">
-                    <input type="text" name=" Apellido" placeholder=" Apellido">
-                    <input type="text" name=" Numero de telefono" placeholder=" Numero de telefono">
+                    <div class="container__datos">
+                        <label action="Datos de contacto" method="post">
+                            <legend> Datos de contacto </legend>
+                            <label for="nombre"> </label>
+                            <div class="container__input">
+                                <input class="input" type="text" name="nombre" placeholder="Nombre">
+                                <input class="input" type="text" name=" Apellido" placeholder=" Apellido">
+                                <input class="input" type="text" name=" Numero de telefono" placeholder=" Numero de telefono">
+        
+                            </div>
+
+                    </div>
+                    
+                    
                 </div>
                 <br> </br>
                 <div class="horario">
@@ -82,7 +90,7 @@
                             <option value="0" selected> seleccione</option>
                             <option value="productos"> Productos</option>
                             <option value="presupuestos"> presupuestos</option>
-                            <option value="cosnultas varias"> cosnultas varias</option> 
+                            <option value="cosnultas varias"> consultas varias</option> 
                         </select>
                 </div>
                 <br> </br>
@@ -90,7 +98,7 @@
                     
                 <div class="cuadro">
                     <label for="consulta"> Consulta</label> <br>
-                    <textarea name=" Consultas aqui" id="Consultas aqui" rows="20" cols="90"></textarea>    
+                    <textarea name=" Consultas aqui" id="Consultas aqui" rows="10" cols="90"></textarea>    
                     <br> </br>
                 </div>
 
